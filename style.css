@@ -1,0 +1,221 @@
+body {
+  background-color: beige;
+  padding: 80px;
+}
+
+header {
+  color: white;
+  height: 600px;
+  background: no-repeat center url(images/coffeeshop.jpg);
+  background-size: cover;
+}
+
+button {
+  color: white;
+  background-color: black;
+  padding: 1rem;
+  border: solid black;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.barreduhaut {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+}
+
+.entete {
+  display: flex;
+  gap: 3rem;
+}
+
+.entete p {
+  cursor: pointer;
+}
+
+.loupe {
+  height: 1.5rem;
+  padding: 0.5em;
+  cursor: pointer;
+}
+
+.recherche {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.accueil {
+  padding-left: 7rem;
+}
+
+.order {
+  color: black;
+  background-color: white;
+  border: solid white;
+}
+
+.sectionUn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 4rem;
+  padding: 2rem;
+}
+
+.dessin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon {
+  height: 3.5rem;
+}
+
+.sectionDeux {
+  background-color: white;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.sectionDeux h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.sectionDeux h4 {
+  margin: 0;
+}
+
+.carrousel {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 80%;
+  margin: auto;
+  gap: 2rem;
+}
+
+.like {
+  border: solid;
+  position: relative;
+  padding: 0.5rem;
+}
+
+.coeur {
+  height: 2rem;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  cursor: pointer;
+}
+
+.foto {
+  height: 200px;
+  width: 100%;
+}
+
+.ref {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buy {
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+.sectionTrois {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  text-align: center;
+}
+
+.cafeG {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  height: 300px;
+  margin-left: -70px;
+}
+
+.cafeD {
+  height: 300px;
+  margin-right: -80px;
+}
+
+.sectionQuatre {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.police {
+  font-family: "Meow Script", cursive;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.sectionCinq {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sectionCinq h2 {
+  margin: 0;
+}
+
+.bean {
+  height: 250px;
+  width: 250px;
+}
+
+.reverse {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.inscription {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.email {
+  padding: 1rem;
+  border: solid white;
+  border-radius: 30px;
+}
+
+footer {
+  color: white;
+  background-color: rgb(82, 61, 61);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: start;
+  padding: 20px;
+}
+
+.sociaux {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 0.5rem;
+}
+
+.social {
+  height: 2.5rem;
+  cursor: pointer;
+}
