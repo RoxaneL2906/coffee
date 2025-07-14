@@ -27,6 +27,10 @@ button {
   padding: 1rem 3rem;
 }
 
+.menu {
+  display: none;
+}
+
 .entete {
   display: flex;
   gap: 3rem;
@@ -133,24 +137,28 @@ button {
 }
 
 .sectionTrois {
+  position: relative;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   overflow: hidden;
   text-align: center;
+  height: 300px;
 }
 
 .cafeG {
+  position: absolute;
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
   height: 300px;
-  margin-left: -70px;
+  left: -70px;
 }
 
 .cafeD {
+  position: absolute;
   height: 300px;
-  margin-right: -80px;
+  right: -80px;
 }
 
 .sectionQuatre {
@@ -208,6 +216,12 @@ footer {
   padding: 20px;
 }
 
+footer .liens {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+
 .sociaux {
   display: flex;
   flex-direction: row;
@@ -218,4 +232,84 @@ footer {
 .social {
   height: 2.5rem;
   cursor: pointer;
+}
+
+@media (max-width: 1710px) {
+  body {
+    padding: 10px;
+  }
+
+  .menu {
+    display: block;
+    font-size: 1.8rem;
+  }
+
+  .entete {
+    display: none;
+  }
+
+  .accueil {
+    padding-left: 2rem;
+  }
+
+  .sectionUn {
+    gap: 3rem;
+  }
+
+  .sectionDeux {
+    padding: 1rem;
+  }
+
+  .carrousel {
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .sectionTrois {
+    height: 220px;
+  }
+
+  .sectionQuatre {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .cafeG {
+    position: relative;
+    height: 175px;
+  }
+
+  .cafeD {
+    display: none;
+  }
+
+  .bean {
+    width: 100px;
+    height: 100px;
+    align-self: center;
+  }
+
+  .sectionCinq p {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .inscription {
+    align-items: center;
+    padding: 1rem;
+  }
+
+  footer {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 0.8rem;
+    gap: 1rem;
+    margin-top: 1rem;
+    height: auto;
+  }
+
+  .invisible {
+    display: none;
+  }
 }
